@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "My First Gatsby Site",
+    siteUrl: "https://j2p.dev",
+    title: "J2P Blog",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
@@ -14,6 +14,12 @@ module.exports = {
         name: `blog`,
         path: `${__dirname}/blog`,
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+      },
     },
   ],
 };
